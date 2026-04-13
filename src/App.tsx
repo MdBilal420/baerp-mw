@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Problems from './components/Problems';
@@ -8,8 +8,11 @@ import HowItWorks from './components/HowItWorks';
 import Trust from './components/Trust';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import BookDemoModal from './components/BookDemoModal';
 
 function App() {
+  const [showDemo, setShowDemo] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -30,15 +33,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white antialiased">
-      <Navbar />
-      <Hero />
+      <Navbar onOpenDemo={() => setShowDemo(true)} />
+      <Hero onOpenDemo={() => setShowDemo(true)} />
       <Problems />
       <Solution />
       <Features />
       <HowItWorks />
       <Trust />
-      <CTASection />
+      <CTASection onOpenDemo={() => setShowDemo(true)} />
       <Footer />
+      {showDemo && <BookDemoModal onClose={() => setShowDemo(false)} />}
     </div>
   );
 }

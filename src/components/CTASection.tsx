@@ -1,6 +1,6 @@
 import { ArrowRight, Calendar, Zap } from 'lucide-react';
 
-export default function CTASection() {
+export default function CTASection({ onOpenDemo }: { onOpenDemo?: () => void }) {
   return (
     <section className="bg-white py-24 lg:py-32" id="pricing">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
@@ -29,14 +29,14 @@ export default function CTASection() {
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              <a
-                href="#"
+              <button
+                onClick={onOpenDemo}
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-blue-500/25 group text-lg"
               >
                 <Calendar className="w-5 h-5" />
                 Book a Demo
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </button>
               <a
                 href="#"
                 className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200 text-lg"

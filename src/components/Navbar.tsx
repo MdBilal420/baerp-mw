@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Pricing', href: '#pricing' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -64,12 +64,12 @@ export default function Navbar() {
             >
               Sign in
             </a>
-            <a
-              href="#"
+            <button
+              onClick={onOpenDemo}
               className="text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors shadow-sm"
             >
               Book Demo
-            </a>
+            </button>
           </div>
 
           <button
@@ -97,9 +97,12 @@ export default function Navbar() {
           ))}
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
             <a href="#" className="text-sm font-medium text-slate-600 px-3 py-2">Sign in</a>
-            <a href="#" className="text-sm font-semibold bg-blue-600 text-white px-4 py-2 rounded-lg text-center">
+            <button
+              onClick={() => { setMenuOpen(false); onOpenDemo?.(); }}
+              className="text-sm font-semibold bg-blue-600 text-white px-4 py-2 rounded-lg text-center"
+            >
               Book Demo
-            </a>
+            </button>
           </div>
         </div>
       )}
