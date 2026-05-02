@@ -25,7 +25,7 @@ export default function CTASection({ onOpenDemo }: { onOpenDemo?: () => void }) 
             </h2>
 
             <p className="text-lg text-slate-400 leading-relaxed max-w-xl mx-auto mb-10">
-              Book a personalized demo and see exactly how baerp maps to your company's workflow. Setup takes days, not months.
+              Book a personalized demo and see exactly how bwork maps to your company's workflow. Setup takes days, not months.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">

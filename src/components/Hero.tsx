@@ -9,39 +9,39 @@ const trustBadges = [
 export default function Hero({ onOpenDemo }: { onOpenDemo?: () => void }) {
 
   return (
-    <section className="relative min-h-screen bg-slate-950 hero-grid overflow-hidden flex flex-col">
+    <section className="relative min-h-screen bg-gradient-to-b from-slate-50 to-white overflow-hidden flex flex-col">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59,130,246,0.25) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59,130,246,0.12) 0%, transparent 70%)',
         }}
       />
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
         style={{
-          background: 'linear-gradient(to bottom, transparent, #0f172a)',
+          background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.5))',
         }}
       />
 
       <div className="relative flex-1 flex items-center max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16">
         <div className="w-full grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider animate-fade-in">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse-slow" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-blue-600 text-xs font-semibold uppercase tracking-wider animate-fade-in">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse-slow" />
               Workflow-Driven ERP
             </div>
 
             <div className="space-y-4 animate-fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
+              <h1 className="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.05] tracking-tight">
                 Procurement
                 <br />
                 <span className="gradient-text">Without</span>
                 <br />
                 the Chaos.
               </h1>
-              <p className="text-lg text-slate-400 leading-relaxed max-w-lg">
-                baerp enforces every step of your procurement process — from request to storage — so nothing is skipped, lost, or unaccounted for.
+              <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
+                bwork enforces every step of your procurement process — from request to storage — so nothing is skipped, lost, or unaccounted for.
               </p>
             </div>
 
@@ -49,7 +49,7 @@ export default function Hero({ onOpenDemo }: { onOpenDemo?: () => void }) {
               {trustBadges.map((badge) => (
                 <div
                   key={badge}
-                  className="flex items-center gap-1.5 text-slate-400 text-sm"
+                  className="flex items-center gap-1.5 text-slate-600 text-sm"
                 >
                   <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
                   {badge}
@@ -74,14 +74,14 @@ export default function Hero({ onOpenDemo }: { onOpenDemo?: () => void }) {
         </div>
       </div>
 
-      <div className="relative border-t border-white/5 py-6">
+      <div className="relative border-t border-slate-200 py-6">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-slate-600 text-xs uppercase tracking-widest font-medium mb-6">
+          <p className="text-center text-slate-500 text-xs uppercase tracking-widest font-medium mb-6">
             Trusted by procurement teams at
           </p>
-          <div className="flex flex-wrap justify-center gap-8 items-center opacity-40">
+          <div className="flex flex-wrap justify-center gap-8 items-center opacity-60">
             {['Nexora Industries', 'Steelpath Corp', 'Voltex Manufacturing', 'Arvio Group', 'Crestline Works'].map((name) => (
-              <span key={name} className="text-white text-sm font-semibold tracking-wide">
+              <span key={name} className="text-slate-700 text-sm font-semibold tracking-wide">
                 {name}
               </span>
             ))}
@@ -114,7 +114,7 @@ function DashboardMockup() {
             <div className="w-3 h-3 rounded-full bg-green-500/60" />
           </div>
           <div className="flex-1 mx-4 bg-slate-700/50 rounded-md h-5 flex items-center px-2">
-            <span className="text-slate-500 text-[10px]">app.baerp.io/procurement/PR-2841</span>
+            <span className="text-slate-500 text-[10px]">app.bwork.io/procurement/PR-2841</span>
           </div>
         </div>
 

@@ -33,7 +33,7 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
               <Zap className="w-4 h-4 text-white" fill="white" />
             </div>
             <span className={`text-xl font-800 tracking-tight font-extrabold ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-              baerp
+              bwork
             </span>
           </a>
 

@@ -17,7 +17,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center group-hover:bg-blue-500 transition-colors">
                 <Zap className="w-4 h-4 text-white" fill="white" />
               </div>
-              <span className="text-xl font-extrabold text-white tracking-tight">baerp</span>
+              <span className="text-xl font-extrabold text-white tracking-tight">bwork</span>
             </a>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               A workflow-driven ERP system for procurement teams that need structure, control, and complete traceability.
@@ -62,7 +62,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-600 text-sm">
-            &copy; {new Date().getFullYear()} baerp. All rights reserved.
+            &copy; {new Date().getFullYear()} bwork. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-xs text-slate-600">

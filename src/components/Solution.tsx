@@ -30,7 +30,7 @@ export default function Solution() {
                 A procurement engine that runs by the rules. Always.
               </h2>
               <p className="mt-5 text-lg text-slate-500 leading-relaxed">
-                baerp isn't a form tool or a spreadsheet replacement. It's a deterministic workflow system — every transition is controlled, every actor is accountable.
+                bwork isn't a form tool or a spreadsheet replacement. It's a deterministic workflow system — every transition is controlled, every actor is accountable.
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function Solution() {
                 return (
                   <div
                     key={item.title}
-                    className={`reveal reveal-delay-${i + 1} flex gap-4 p-5 rounded-xl border border-slate-100 hover:border-blue-200 hover:bg-blue-50/30 transition-all duration-200 card-hover`}
+                    className={`reveal reveal-delay-${i + 1} flex gap-4 p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 card-hover`}
                   >
                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 text-white" />
@@ -83,7 +83,7 @@ function WorkflowVisualization() {
   ];
 
   return (
-    <div className="relative bg-slate-50 rounded-3xl border border-slate-200 p-8">
+    <div className="relative bg-white rounded-3xl border border-slate-200 p-8">
       <div className="absolute top-4 right-4 bg-green-100 border border-green-200 rounded-full px-3 py-1 text-green-700 text-xs font-semibold">
         Live Workflow
       </div>
