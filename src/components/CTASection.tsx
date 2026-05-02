@@ -66,7 +66,7 @@ export default function CTASection({ onOpenDemo }: { onOpenDemo?: () => void }) 
             {
               step: '1',
               title: 'Book a 30-min demo',
-              desc: 'We walk through your current process and show how baerp maps to it.',
+              desc: 'We walk through your current process and show how bwork maps to it.',
             },
             {
               step: '2',

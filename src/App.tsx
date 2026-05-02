@@ -41,7 +41,7 @@ function App() {
       <HowItWorks />
       <Trust />
       <CTASection onOpenDemo={() => setShowDemo(true)} />
-      <Footer />
+      <Footer onOpenDemo={() => setShowDemo(true)} />
       {showDemo && <BookDemoModal onClose={() => setShowDemo(false)} />}
     </div>
   );

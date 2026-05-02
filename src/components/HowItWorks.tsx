@@ -47,7 +47,7 @@ const steps = [
     icon: ShoppingCart,
     label: 'Purchase',
     role: 'Purchase Team',
-    description: 'Purchase team selects vendor, raises PO, and records pricing — all within budget constraints.',
+    description: 'Purchase team selects vendor, raises PO, and records pricing - all within budget constraints.',
     color: 'bg-cyan-600',
     border: 'border-cyan-200',
     light: 'bg-cyan-50',
@@ -98,7 +98,7 @@ export default function HowItWorks() {
             Seven steps. Zero exceptions.
           </h2>
           <p className="mt-5 text-lg text-slate-500">
-            Every material purchase in your company follows this exact path — no shortcuts, no ambiguity, no exceptions. Teams always know where they stand.
+            Every material purchase in your company follows this exact path - no shortcuts, no ambiguity, no exceptions. Teams always know where they stand.
           </p>
         </div>
 
@@ -177,7 +177,7 @@ export default function HowItWorks() {
             },
             {
               title: 'Full trail per request',
-              desc: 'Each PR has a complete timeline view — who touched it, when, and what changed.',
+              desc: 'Each PR has a complete timeline view - who touched it, when, and what changed.',
               color: 'border-slate-200 bg-slate-50',
               dot: 'bg-slate-600',
             },

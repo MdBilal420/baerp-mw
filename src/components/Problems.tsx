@@ -73,7 +73,7 @@ export default function Problems() {
           <div className="flex flex-col lg:flex-row lg:items-center gap-6">
             <div className="flex-1">
               <h3 className="text-xl font-bold text-slate-900 mb-2">
-                The real cost isn't just money — it's control.
+                The real cost isn't just money - it's control.
               </h3>
               <p className="text-slate-500">
                 Every skipped approval, every undocumented purchase, every missed delivery is a crack in your operational foundation. As you scale, those cracks become structural failures.

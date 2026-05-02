@@ -51,12 +51,12 @@ export default function Trust() {
     <section className="bg-slate-950 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16 reveal">
-          <span className="text-sm font-semibold text-blue-400 uppercase tracking-wider">Why Teams Trust baerp</span>
+          <span className="text-sm font-semibold text-blue-400 uppercase tracking-wider">Why Teams Trust bwork</span>
           <h2 className="mt-3 text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight">
             Reliability isn't a feature. It's the foundation.
           </h2>
           <p className="mt-5 text-lg text-slate-400">
-            We built baerp for procurement managers who are accountable for outcomes — not just for tracking inputs.
+            We built bwork for procurement managers who are accountable for outcomes - not just for tracking inputs.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function Trust() {
           <div className="flex flex-col lg:flex-row lg:items-center gap-8">
             <div className="flex-1">
               <blockquote className="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                "Before baerp, we had 3 people just tracking approval status over WhatsApp. Now our procurement cycle is 4x faster and we haven't had a single compliance failure in 8 months."
+                "Before bwork, we had 3 people just tracking approval status over WhatsApp. Now our procurement cycle is 4x faster and we haven't had a single compliance failure in 8 months."
               </blockquote>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-blue-500/30 border border-blue-400/30 flex items-center justify-center text-white font-bold text-sm">

@@ -4,7 +4,7 @@ import { Menu, X, Zap } from 'lucide-react';
 const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Why baerp', href: '#why-baerp' },
+  { label: 'Why bwork', href: '#why-bwork' },
   { label: 'Pricing', href: '#pricing' },
 ];
 
@@ -32,7 +32,7 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
               <Zap className="w-4 h-4 text-white" fill="white" />
             </div>
-            <span className={`text-xl font-800 tracking-tight font-extrabold ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+            <span className={`text-xl font-800 tracking-tight font-extrabold text-slate-900`}>
               bwork
             </span>
           </a>
@@ -42,11 +42,7 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  scrolled
-                    ? 'text-slate-600 hover:text-slate-900'
-                    : 'text-white/80 hover:text-white'
-                }`}
+                className={`text-sm font-medium transition-colors text-slate-600 hover:text-slate-900`}
               >
                 {link.label}
               </a>
@@ -54,16 +50,14 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <a
+            {/* <a
               href="#"
-              className={`text-sm font-medium transition-colors px-4 py-2 rounded-lg ${
-                scrolled
-                  ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                  : 'text-white/90 hover:text-white hover:bg-white/10'
+              className={`text-sm font-medium transition-colors px-4 py-2 rounded-lg
+                text-slate-600 hover:text-slate-900 hover:bg-slate-100
               }`}
             >
               Sign in
-            </a>
+            </a> */}
             <button
               onClick={onOpenDemo}
               className="text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors shadow-sm"

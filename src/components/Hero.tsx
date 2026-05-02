@@ -41,7 +41,7 @@ export default function Hero({ onOpenDemo }: { onOpenDemo?: () => void }) {
                 the Chaos.
               </h1>
               <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
-                bwork enforces every step of your procurement process — from request to storage — so nothing is skipped, lost, or unaccounted for.
+                bwork enforces every step of your procurement process - from request to storage - so nothing is skipped, lost, or unaccounted for.
               </p>
             </div>
 
@@ -121,7 +121,7 @@ function DashboardMockup() {
         <div className="p-5 space-y-4">
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-white font-semibold text-sm">PR-2841 — Steel Rods (4mm)</p>
+              <p className="text-white font-semibold text-sm">PR-2841 - Steel Rods (4mm)</p>
               <p className="text-slate-500 text-xs mt-0.5">Raised by PPC · 2 hours ago</p>
             </div>
             <span className="text-[10px] font-semibold px-2 py-1 rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/20">

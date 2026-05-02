@@ -98,7 +98,7 @@ export default function BookDemoModal({ onClose }: { onClose: () => void }) {
           <>
             <h2 className="text-2xl font-bold text-white mb-1">Book a Demo</h2>
             <p className="text-slate-400 text-sm mb-6">
-              See how baerp can streamline your procurement process. Fill in your details and we'll be in touch.
+              See how bwork can streamline your procurement process. Fill in your details and we'll be in touch.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">

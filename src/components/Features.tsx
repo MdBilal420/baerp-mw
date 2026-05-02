@@ -40,7 +40,7 @@ const features = [
     icon: Star,
     title: 'Supplier Intelligence',
     description:
-      'Vendor ratings built from actual QC outcomes and delivery performance — not surveys. Objective, data-driven scores.',
+      'Vendor ratings built from actual QC outcomes and delivery performance - not surveys. Objective, data-driven scores.',
     tag: 'Vendors',
     tagColor: 'bg-amber-50 text-amber-700 border-amber-200',
     iconBg: 'bg-amber-500',
@@ -129,12 +129,12 @@ export default function Features() {
                   </div>
                   <p className="text-blue-100 leading-relaxed">{Feature.description}</p>
                 </div>
-                <a
+                {/* <a
                   href="#"
                   className="bg-white text-blue-600 font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm whitespace-nowrap flex-shrink-0"
                 >
                   See report types
-                </a>
+                </a> */}
               </div>
             </div>
           );

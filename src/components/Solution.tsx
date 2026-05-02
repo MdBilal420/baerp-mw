@@ -9,7 +9,7 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: 'Role-Based Gates',
-    description: 'Each stage is owned by a specific role. PPC raises requests, Store verifies, Managers approve — no role overreach.',
+    description: 'Each stage is owned by a specific role. PPC raises requests, Store verifies, Managers approve - no role overreach.',
   },
   {
     icon: BarChart3,
@@ -20,7 +20,7 @@ const pillars = [
 
 export default function Solution() {
   return (
-    <section className="bg-white py-24 lg:py-32 overflow-hidden" id="why-baerp">
+    <section className="bg-white py-24 lg:py-32 overflow-hidden" id="why-bwork">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
@@ -30,7 +30,7 @@ export default function Solution() {
                 A procurement engine that runs by the rules. Always.
               </h2>
               <p className="mt-5 text-lg text-slate-500 leading-relaxed">
-                bwork isn't a form tool or a spreadsheet replacement. It's a deterministic workflow system — every transition is controlled, every actor is accountable.
+                bwork isn't a form tool or a spreadsheet replacement. It's a deterministic workflow system - every transition is controlled, every actor is accountable.
               </p>
             </div>
 
