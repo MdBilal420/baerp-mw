@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'Features', href: '#features' },
@@ -28,13 +28,12 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
-              <Zap className="w-4 h-4 text-white" fill="white" />
-            </div>
-            <span className={`text-xl font-800 tracking-tight font-extrabold text-slate-900`}>
-              bwork
-            </span>
+          <a href="#" className="flex items-center group">
+            <img
+              src="/bwork-logo.png"
+              alt="bwork"
+              className="h-32 w-32 mt-8"
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -67,9 +66,7 @@ export default function Navbar({ onOpenDemo }: { onOpenDemo?: () => void }) {
           </div>
 
           <button
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'
-            }`}
+            className="md:hidden p-2 rounded-lg transition-colors text-slate-700 hover:bg-slate-100"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

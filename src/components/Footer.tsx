@@ -1,4 +1,3 @@
-import { Zap } from 'lucide-react';
 
 interface FooterProps {
   onOpenDemo: () => void;
@@ -16,11 +15,12 @@ export default function Footer({ onOpenDemo }: FooterProps) {
     <footer className="bg-slate-950 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-6">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-7 h-7 rounded-md bg-blue-600 flex items-center justify-center group-hover:bg-blue-500 transition-colors">
-              <Zap className="w-3.5 h-3.5 text-white" fill="white" />
-            </div>
-            <span className="text-lg font-bold text-white tracking-tight">bwork</span>
+          <a href="#" className="flex items-center group">
+            <img
+              src="/bwork-logo.png"
+              alt="bwork"
+              className="h-32 w-32 mt-8"
+            />
           </a>
           <nav className="hidden sm:flex items-center gap-4">
             {navLinks.map((link) => (
